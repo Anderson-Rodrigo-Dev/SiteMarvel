@@ -5,10 +5,8 @@ const nomePersonagem = document.getElementsByClassName("nome");
 listaPersonagens.forEach(function (item) {
   item.addEventListener("mouseover", function () {
     const personagemSelecionado = document.querySelector(".selecionado");
-
-    if (personagemSelecionado) {
-      personagemSelecionado.classList.remove("selecionado");
-    }
+    
+    if (personagemSelecionado) personagemSelecionado.classList.remove("selecionado");
 
     personagemGrande.src = `../src/imagens/${item.id}.png`;
 
